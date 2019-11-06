@@ -10,7 +10,8 @@ def key_for_min_value(name_hash)
            smallest_val = [k,v]
         end
     end
-    nil
+  else
+    nil 
   end
   smallest_val[0]
 end
