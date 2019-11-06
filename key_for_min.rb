@@ -3,12 +3,12 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  smallest_num = name_hash.first
+  smallest_val = name_hash.first
     name_hash.each do |k,v| 
       binding.pry
-        if v < smallest_num[1]
-           smallest_num = [k,v]
+        if v < smallest_val[1]
+           smallest_val = [k,v]
         end
     end
-  smallest_num
+  smallest_val
 end
