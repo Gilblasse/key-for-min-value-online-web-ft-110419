@@ -3,7 +3,9 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-    name_hash.detect do |k,v| 
-      
+  smallest_num = name_hash[]
+    name_hash.each do |k,v| 
+      if v < smallest_num
+         smallest_num = v
     end
 end
